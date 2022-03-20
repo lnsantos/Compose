@@ -31,6 +31,7 @@ import com.lnsantos.dojo.extension.dpByState
 import com.lnsantos.dojo.extension.iconExpandByState
 import com.lnsantos.dojo.extension.onInverterValue
 import com.lnsantos.dojo.extension.stringByState
+import com.lnsantos.dojo.ui.theme.BackgroundScreen
 import com.lnsantos.dojo.ui.theme.DojoTheme
 
 class MainActivity : ComponentActivity() {
@@ -159,7 +160,7 @@ private fun CardIndicator(name: String) {
                             .fillMaxWidth()
                             .height(1.dp)
                             .clip(RectangleShape)
-                            .background(Color.LightGray)
+                            .background(BackgroundScreen)
                     )
                     Spacer(modifier = Modifier.padding(8.dp))
                     Text(
